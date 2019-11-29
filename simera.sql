@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 25, 2019 at 03:35 PM
+-- Generation Time: Nov 29, 2019 at 01:43 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.3
 
@@ -391,9 +391,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id_user`, `id_jabatan`, `username`, `password`, `email`, `foto`, `type_user`) VALUES
-(2, 2, 'mahmud', 'e1aa6aa12922a1275c9c8f8e54bac8d6', 'mahmud12031998@gmail.com', 'avatar.png', 1),
-(6, 2, 'kacang ', '67f1b7d102b27c1a0e2cbf96e934dc6d', 'kacangtanah@gmail.com', 'avatar.png', 2),
-(7, 2, 'andika', '7e51eea5fa101ed4dade9ad3a7a072bb', 'andika@gmail.com', 'avatar.png', 2);
+(6, 2, 'kacang ', 'e1aa6aa12922a1275c9c8f8e54bac8d6', 'kacangtanah@gmail.com', 'avatar.png', 2),
+(7, 2, 'andika', '7e51eea5fa101ed4dade9ad3a7a072bb', 'andika@gmail.com', 'avatar.png', 2),
+(8, 2, 'kacang', '21232f297a57a5a743894a0e4a801fc3', 'admin@gmail.com', 'avatar.png', 2),
+(9, 2, 'mahmud', '7e51eea5fa101ed4dade9ad3a7a072bb', 'andika@gmail.com', 'avatar.png', 2);
 
 --
 -- Indexes for dumped tables
@@ -541,7 +542,7 @@ ALTER TABLE `kondisi_kendaraan`
 -- AUTO_INCREMENT for table `pemeliharaan`
 --
 ALTER TABLE `pemeliharaan`
-  MODIFY `id_pemeliharaan` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_pemeliharaan` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `peminjaman`
@@ -589,7 +590,7 @@ ALTER TABLE `type_kendaraan`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Constraints for dumped tables
