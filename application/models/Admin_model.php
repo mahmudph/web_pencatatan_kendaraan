@@ -96,8 +96,7 @@ class Admin_model extends CI_Model{
 		$this->db->select('*')->from('peminjaman PJ');
 		$this->db->join('kendaraan KD', 'KD.id_kendaraan=PJ.id_kendaraan');
 		$this->db->join('publick_users Usr', 'Usr.id_users_public=PJ.id_users_public');
-        $this->db->where('PJ.tgl_pemakaian <=', date('Y-m-d'));
-		$this->db->where('PJ.tanggal_kembali >=', date('Y-m-d'));
+         $this->db->where('PJ.status_kembali', 1);
 		return $this->db->get()->num_rows();
 	}
 }

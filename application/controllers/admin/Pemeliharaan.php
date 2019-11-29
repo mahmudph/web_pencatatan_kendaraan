@@ -223,7 +223,7 @@ class Pemeliharaan extends CI_Controller {
         echo "<script>alert('berhasil menambahkan perbaikan kendaraan'); window.location='".base_url()."admin/pemeliharaan'</script>";
 
     }
-/*
+
 
     public function update($id) {
         $isi['content']     = 'admin/pemeliharaan/update_form';
@@ -262,7 +262,7 @@ class Pemeliharaan extends CI_Controller {
         $this->db->update('pemeliharaan', $data);
         echo "<script>alert('berhasil update perbaikan kendaraan'); window.location='".base_url()."admin/pemeliharaan'</script>";
      
-    }*/
+    }
 
     public function hapus($id) {
         $this->db->delete('pemeliharaan', array('id_pemeliharaan' => $id));

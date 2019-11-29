@@ -16,7 +16,7 @@
                 <th>Keterangan</th>
                 
                 <th>Tersisa</th>
-                <?php if($this->session->userdata('level' == 1)) { ?>
+                <?php if($this->session->userdata('level_user') == 1) { ?>
                   <th>Action</th>
                 <?php } ?>
               </tr>
@@ -53,7 +53,7 @@
     
 
               </td>
-            <?php if($this->session->userdata('level' == 1)) { ?>
+            <?php if($this->session->userdata('level_user') == 1) { ?>
               <td><a title="kendaraan sudah kembali?" class="btn btn-success btn-xs" href="<?= base_url("/admin/peminjamaan/kembali/".$row->id_peminjaman) ?>">kembalian</a></td>
             <?php }  ?>
 

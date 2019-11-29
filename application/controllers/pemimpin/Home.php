@@ -74,11 +74,16 @@ class Home extends CI_Controller {
             );
 
             $this->db->insert('users', $data);
-            echo "<script>alert('berhasil menambah  data users'); window.location='".base_url()."admin/tambah_user'</script>";
+            echo "<script>alert('berhasil menambah  data users'); window.location='".base_url()."pemimpin/home/tambah_user'</script>";
         } else {
-            echo "<script>alert('password tidak sama'); window.location='".base_url()."admin/tambah_user'</script>";
+            echo "<script>alert('password tidak sama'); window.location='".base_url()."pemimpin/home/tambah_user'</script>";
         }
 
 
+    }
+    public function hapus($id) {
+        $this->db->delete('users', array('id_user' => $id));
+        echo "<script>alert('berhasil hapus  data users'); window.location='".base_url()."pemimpin/home/tambah_user'</script>";
+        
     }
 }

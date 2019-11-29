@@ -12,7 +12,7 @@
               <th>Tanggal Perbaikan </th>
               <th>Harga Perbaikan</th>
               <th>keterangan</th>
-              <!-- <th>Action</th> -->
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -30,8 +30,8 @@
                   <td>Rp. <?= number_format($row->harga_pemeliharaan)?></td>
                   <td><?php echo $row->keterangan;?></td>
                   <td>
-                <!--   <a href="<?php echo base_url()."admin/pemeliharaan/hapus/".$row->id_pemeliharaan; ?>" class="btn btn-danger btn-sm">Delete</a>
-                </td> -->
+                <a href="<?php echo base_url()."admin/pemeliharaan/update/".$row->id_pemeliharaan; ?>" class="btn btn-info btn-sm">selengkapnya</a>
+                </td>
               </tr>
           <?php $no++; } ?>
                   

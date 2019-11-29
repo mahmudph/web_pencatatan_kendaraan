@@ -20,7 +20,7 @@
                             <td><?= $us->email ?></td>
                             <td><?= $us->type_user == 1 ? 'admin' : 'pemimpin' ?> </td>
                             <td>
-                                <a class="btn btn-xs btn-danger" href="<?= base_url("admin/user/hapus/".$us->id_user) ?>">Hapus</a>
+                                <a class="btn btn-xs btn-danger" href="<?= base_url("pemimpin/home/hapus/".$us->id_user) ?>">Hapus</a>
                             </td>
                     </tr>
                 <?php 
@@ -36,7 +36,7 @@
         <h3 class="box-title">Tambah pengguna</h3>
     </div>
     <div class="box-body">
-        <form class="form-horizontal" method="post" action="<?php echo base_url();?>admin/add_user_save" enctype="multipart/form-data">
+        <form class="form-horizontal" method="post" action="<?php echo base_url();?>pemimpin/home/add_user_save" enctype="multipart/form-data">
             <div class="box-body">
 
                 <div class="form-group">
